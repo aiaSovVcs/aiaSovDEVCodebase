@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Values version="2.0">
+  <value name="encodeutf8">true</value>
+  <value name="shared">cHVibGljIHN0YXRpYyBjbGFzcyBDb3B5RGlyIGV4dGVuZHMgU2ltcGxlRmlsZVZpc2l0b3I8UGF0
+aD4gewpwcml2YXRlIFBhdGggc291cmNlRGlyOwpwcml2YXRlIFBhdGggdGFyZ2V0RGlyOwogCnB1
+YmxpYyBDb3B5RGlyKFBhdGggc291cmNlRGlyLCBQYXRoIHRhcmdldERpcikgewogICAgdGhpcy5z
+b3VyY2VEaXIgPSBzb3VyY2VEaXI7CiAgICB0aGlzLnRhcmdldERpciA9IHRhcmdldERpcjsKfQog
+CnB1YmxpYyBGaWxlVmlzaXRSZXN1bHQgdmlzaXRGaWxlKFBhdGggZmlsZSxCYXNpY0ZpbGVBdHRy
+aWJ1dGVzIGF0dHJpYnV0ZXMpIHsKIAogICAgdHJ5IHsKICAgICAgICBQYXRoIHRhcmdldEZpbGUg
+PSB0YXJnZXREaXIucmVzb2x2ZShzb3VyY2VEaXIucmVsYXRpdml6ZShmaWxlKSk7CiAgICAgICAg
+RmlsZXMuY29weShmaWxlLCB0YXJnZXRGaWxlKTsKICAgIH0gY2F0Y2ggKElPRXhjZXB0aW9uIGV4
+KSB7CiAgICAgICAgU3lzdGVtLmVyci5wcmludGxuKGV4KTsKICAgIH0KIAogICAgcmV0dXJuIEZp
+bGVWaXNpdFJlc3VsdC5DT05USU5VRTsKfQogCnB1YmxpYyBGaWxlVmlzaXRSZXN1bHQgcHJlVmlz
+aXREaXJlY3RvcnkoUGF0aCBkaXIsQmFzaWNGaWxlQXR0cmlidXRlcyBhdHRyaWJ1dGVzKSB7CiAg
+ICB0cnkgewogICAgICAgIFBhdGggbmV3RGlyID0gdGFyZ2V0RGlyLnJlc29sdmUoc291cmNlRGly
+LnJlbGF0aXZpemUoZGlyKSk7CiAgICAgICAgRmlsZXMuY3JlYXRlRGlyZWN0b3J5KG5ld0Rpcik7
+CiAgICB9IGNhdGNoIChJT0V4Y2VwdGlvbiBleCkgewogICAgICAgIFN5c3RlbS5lcnIucHJpbnRs
+bihleCk7CiAgICB9CiAKICAgIHJldHVybiBGaWxlVmlzaXRSZXN1bHQuQ09OVElOVUU7Cn0KfQ==
+</value>
+  <value name="extends"></value>
+  <array name="implements" type="value" depth="1">
+  </array>
+  <array name="imports" type="value" depth="1">
+    <value>java.io.IOException</value>
+    <value>java.nio.file.FileVisitResult</value>
+    <value>java.nio.file.Files</value>
+    <value>java.nio.file.Path</value>
+    <value>java.nio.file.Paths</value>
+    <value>java.nio.file.SimpleFileVisitor</value>
+    <value>java.nio.file.attribute.BasicFileAttributes</value>
+  </array>
+</Values>
