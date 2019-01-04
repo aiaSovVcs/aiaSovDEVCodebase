@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Values version="2.0">
+  <value name="node_type">webServiceDescriptor</value>
+  <value name="node_subtype">unknown</value>
+  <value name="node_nsName">AIANZCalcuationSSPService.ws.consumer:sovCalculateService_wsd_</value>
+  <value name="node_pkg">AIANZCalcuationSSPService</value>
+  <value name="is_public">false</value>
+  <Boolean name="inbound">false</Boolean>
+  <Boolean name="WSICompliant">false</Boolean>
+  <value name="SOAPProtocol">SOAP 1.1 Protocol</value>
+  <value name="targetNamespace">http://asb.co.nz/Services/Calculate/0000/</value>
+  <Boolean name="attachmentEnabled">false</Boolean>
+  <number name="mtomThreshold" type="Integer">0</number>
+  <array name="externalWSDLSources" type="record" depth="1">
+    <record javaclass="com.wm.util.Values">
+      <value name="contextURI">http://localhost:5555/</value>
+      <value name="locationURI">AIANZCalcuationSSPService.ws.consumer.sovCalculateService_wsd_?wsdl=wsdl0</value>
+      <null name="source"/>
+      <number name="type" type="Integer">1</number>
+    </record>
+  </array>
+  <value name="externalWSDLURL">http://SAG-FXZNMC2.eur.ad.sag:5555/ws/aiaInterfaces.sovCalculation.consumer:sovCalcculateService_wsd?WSDL</value>
+  <value name="WSDLURL">http://SAG-FXZNMC2.eur.ad.sag:5555/ws/AIANZCalcuationSSPService.ws.consumer:sovCalculateService_wsd_?WSDL</value>
+  <value name="definitionName">CalculateService</value>
+  <value name="version">V_10_3</value>
+  <value name="schemaDomain">f2a18dd058bdc25a168aa2598fe</value>
+  <Boolean name="rawArray">true</Boolean>
+  <array name="handlerList" type="record" depth="1">
+  </array>
+  <array name="binderList" type="record" depth="1">
+    <record javaclass="com.wm.util.Values">
+      <value name="binderName">CalculateServiceEndpoint</value>
+      <value name="portAddress">http://ntcomp2739.sov.asbgroup.co.nz/CalculateService.svc</value>
+      <value name="bindingName">CalculateServiceEndpoint</value>
+      <value name="bindingStyle">document</value>
+      <value name="bindingUse">literal</value>
+      <value name="bindingType">SOAP</value>
+      <value name="portName">CalculateServiceEndpoint</value>
+      <value name="portTypeName">CalculateService</value>
+      <value name="bindingTransport">http://schemas.xmlsoap.org/soap/http</value>
+      <value name="transportType">http</value>
+      <record name="operationMap" javaclass="com.wm.util.Values">
+        <value name="http://asb.co.nz/Services/Calculate/0000/CalculateService/Calculate">Calculate</value>
+        <value name="http://asb.co.nz/Services/Calculate/0000/CalculateService/Validate">Validate</value>
+      </record>
+      <value name="SOAPProtocol">SOAP 1.1 Protocol</value>
+      <value name="SOAPDirective">ws</value>
+      <Boolean name="useCSQ">false</Boolean>
+    </record>
+  </array>
+  <array name="operationList" type="record" depth="1">
+    <record javaclass="com.wm.util.Values">
+      <value name="operationName">Calculate</value>
+      <value name="serviceName">AIANZCalcuationSSPService.ws.consumer.sovCalculateService_wsd__.connectors:CalculateService_Calculate</value>
+      <value name="originalMEPType">MEP_URI_IN_OUT</value>
+      <record name="requestElement" javaclass="com.wm.util.Values">
+        <array name="headers" type="record" depth="1">
+        </array>
+        <record name="body" javaclass="com.wm.util.Values">
+          <value name="name">http://asb.co.nz/Services/Calculate/0000/:CalculateService_Calculate_Input</value>
+          <value name="docType">AIANZCalcuationSSPService.ws.consumer.sovCalculateService_wsd__.docTypes:CalculateService_Calculate_Input</value>
+          <value name="nsOwner">AIANZCalcuationSSPService.ws.consumer.sovCalculateService_wsd__.docTypes:CalculateService_Calculate_Input</value>
+          <number name="nsOwnerType" type="Integer">3</number>
+          <Boolean name="addedByClient">false</Boolean>
+          <value name="action">http://asb.co.nz/Services/Calculate/0000/CalculateService/Calculate</value>
+          <null name="originalDocName"/>
+        </record>
+        <array name="faults" type="record" depth="1">
+        </array>
+      </record>
+      <record name="responseElement" javaclass="com.wm.util.Values">
+        <array name="headers" type="record" depth="1">
+        </array>
+        <record name="body" javaclass="com.wm.util.Values">
+          <value name="name">http://asb.co.nz/Services/Calculate/0000/:CalculateService_Calculate_Output</value>
+          <value name="docType">AIANZCalcuationSSPService.ws.consumer.sovCalculateService_wsd__.docTypes:CalculateService_Calculate_Output</value>
+          <value name="nsOwner">AIANZCalcuationSSPService.ws.consumer.sovCalculateService_wsd__.docTypes:CalculateService_Calculate_Output</value>
+          <number name="nsOwnerType" type="Integer">3</number>
+          <Boolean name="addedByClient">false</Boolean>
+          <value name="action">http://asb.co.nz/Services/Calculate/0000/CalculateService/CalculateResponse</value>
+          <null name="originalDocName"/>
+        </record>
+        <array name="faults" type="record" depth="1">
+        </array>
+      </record>
+    </record>
+    <record javaclass="com.wm.util.Values">
+      <value name="operationName">Validate</value>
+      <value name="serviceName">AIANZCalcuationSSPService.ws.consumer.sovCalculateService_wsd__.connectors:CalculateService_Validate</value>
+      <value name="originalMEPType">MEP_URI_IN_OUT</value>
+      <record name="requestElement" javaclass="com.wm.util.Values">
+        <array name="headers" type="record" depth="1">
+        </array>
+        <record name="body" javaclass="com.wm.util.Values">
+          <value name="name">http://asb.co.nz/Services/Calculate/0000/:CalculateService_Validate_Input</value>
+          <value name="docType">AIANZCalcuationSSPService.ws.consumer.sovCalculateService_wsd__.docTypes:CalculateService_Validate_Input</value>
+          <value name="nsOwner">AIANZCalcuationSSPService.ws.consumer.sovCalculateService_wsd__.docTypes:CalculateService_Validate_Input</value>
+          <number name="nsOwnerType" type="Integer">3</number>
+          <Boolean name="addedByClient">false</Boolean>
+          <value name="action">http://asb.co.nz/Services/Calculate/0000/CalculateService/Validate</value>
+          <null name="originalDocName"/>
+        </record>
+        <array name="faults" type="record" depth="1">
+        </array>
+      </record>
+      <record name="responseElement" javaclass="com.wm.util.Values">
+        <array name="headers" type="record" depth="1">
+        </array>
+        <record name="body" javaclass="com.wm.util.Values">
+          <value name="name">http://asb.co.nz/Services/Calculate/0000/:CalculateService_Validate_Output</value>
+          <value name="docType">AIANZCalcuationSSPService.ws.consumer.sovCalculateService_wsd__.docTypes:CalculateService_Validate_Output</value>
+          <value name="nsOwner">AIANZCalcuationSSPService.ws.consumer.sovCalculateService_wsd__.docTypes:CalculateService_Validate_Output</value>
+          <number name="nsOwnerType" type="Integer">3</number>
+          <Boolean name="addedByClient">false</Boolean>
+          <value name="action">http://asb.co.nz/Services/Calculate/0000/CalculateService/ValidateResponse</value>
+          <null name="originalDocName"/>
+        </record>
+        <array name="faults" type="record" depth="1">
+        </array>
+      </record>
+    </record>
+  </array>
+  <record name="namespaces" javaclass="com.wm.util.Values">
+    <value name="q1">http://asb.co.nz/ApplicationServices/Calculate/0000/</value>
+    <value name="wsa">http://schemas.xmlsoap.org/ws/2004/08/addressing</value>
+    <value name="wsaw">http://www.w3.org/2006/05/addressing/wsdl</value>
+    <value name="wsa10">http://www.w3.org/2005/08/addressing</value>
+    <value name="xsd">http://www.w3.org/2001/XMLSchema</value>
+    <value name="soap12">http://schemas.xmlsoap.org/wsdl/soap12/</value>
+    <value name="soapenc">http://schemas.xmlsoap.org/soap/encoding/</value>
+    <value name="wsdl">http://schemas.xmlsoap.org/wsdl/</value>
+    <value name="wsp">http://schemas.xmlsoap.org/ws/2004/09/policy</value>
+    <value name="tns">http://asb.co.nz/Services/Calculate/0000/</value>
+    <value name="wsu">http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd</value>
+    <value name="msc">http://schemas.microsoft.com/ws/2005/12/wsdl/contract</value>
+    <value name="wsap">http://schemas.xmlsoap.org/ws/2004/08/addressing/policy</value>
+    <value name="wsx">http://schemas.xmlsoap.org/ws/2004/09/mex</value>
+    <value name="soap">http://schemas.xmlsoap.org/wsdl/soap/</value>
+    <value name="wsam">http://www.w3.org/2007/05/addressing/metadata</value>
+  </record>
+  <Boolean name="HeadersInPipelineEnabled">false</Boolean>
+  <Boolean name="validateSOAPResponse">true</Boolean>
+  <Boolean name="validateSchemaUsingXerces">false</Boolean>
+  <Boolean name="enableCompatibility">false</Boolean>
+  <Boolean name="omitXSDAny">true</Boolean>
+  <record name="userDefinedURIReferencePrefixes" javaclass="com.wm.util.Values">
+    <value name="http://asb.co.nz/ApplicationServices/Calculate/0000/">q11</value>
+    <value name="http://asb.co.nz/Services/Calculate/0000/">q1</value>
+  </record>
+  <Boolean name="registerDoctypes">true</Boolean>
+  <Boolean name="allTypes">false</Boolean>
+  <Boolean name="generateXOPObjectForBase64Binary">false</Boolean>
+  <value name="originURI">http://SAG-FXZNMC2.eur.ad.sag:5555/ws/aiaInterfaces.sovCalculation.consumer:sovCalcculateService_wsd?WSDL</value>
+  <value name="modifiable">false</value>
+  <value name="externalServiceName">{http://asb.co.nz/Services/Calculate/0000/}CalculateService</value>
+  <null name="policyAttachmentList"/>
+  <Boolean name="filterLoginCredentials">false</Boolean>
+</Values>

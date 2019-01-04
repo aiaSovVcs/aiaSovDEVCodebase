@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wsdl:definitions name="CalculateService" targetNamespace="http://asb.co.nz/Services/Calculate/0000/" xmlns:q1="http://asb.co.nz/ApplicationServices/Calculate/0000/" xmlns:wsa="http://schemas.xmlsoap.org/ws/2004/08/addressing" xmlns:wsaw="http://www.w3.org/2006/05/addressing/wsdl" xmlns:wsa10="http://www.w3.org/2005/08/addressing" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/" xmlns:wsp="http://schemas.xmlsoap.org/ws/2004/09/policy" xmlns:tns="http://asb.co.nz/Services/Calculate/0000/" xmlns:wsu="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd" xmlns:msc="http://schemas.microsoft.com/ws/2005/12/wsdl/contract" xmlns:wsap="http://schemas.xmlsoap.org/ws/2004/08/addressing/policy" xmlns:wsx="http://schemas.xmlsoap.org/ws/2004/09/mex" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:wsam="http://www.w3.org/2007/05/addressing/metadata">
+  <wsdl:types>
+    <xs:schema elementFormDefault="qualified" targetNamespace="http://asb.co.nz/ApplicationServices/Calculate/0000/" xmlns:tns="http://asb.co.nz/ApplicationServices/Calculate/0000/" xmlns:xs="http://www.w3.org/2001/XMLSchema"><xs:import namespace="http://asb.co.nz/Services/Calculate/0000/"/><xs:element name="CalculateRequest" type="q1:CalculateRequest" xmlns:q1="http://asb.co.nz/Services/Calculate/0000/"/><xs:element name="CalculateResponse" type="q2:CalculateResponse" xmlns:q2="http://asb.co.nz/Services/Calculate/0000/"/></xs:schema>
+    <xs:schema elementFormDefault="qualified" targetNamespace="http://asb.co.nz/Services/Calculate/0000/" xmlns:xs="http://www.w3.org/2001/XMLSchema"><xs:complexType name="CalculateRequest"><xs:sequence><xs:element maxOccurs="1" minOccurs="0" name="xmlIn" type="xs:string"/></xs:sequence></xs:complexType><xs:complexType name="CalculateResponse"><xs:sequence><xs:element maxOccurs="1" minOccurs="0" name="xmlOut" type="xs:string"/><xs:element maxOccurs="1" minOccurs="0" name="ErrorInfo" type="tns:ErrorInfo"/></xs:sequence></xs:complexType><xs:complexType name="ErrorInfo"><xs:sequence><xs:element maxOccurs="1" minOccurs="1" name="Severity" type="tns:Severity"/><xs:element maxOccurs="1" minOccurs="0" name="Code" type="xs:string"/><xs:element maxOccurs="1" minOccurs="0" name="Description" type="xs:string"/><xs:element maxOccurs="1" minOccurs="0" name="ProductSystem" type="tns:ProductSystem"/></xs:sequence></xs:complexType><xs:simpleType name="Severity"><xs:restriction base="xs:string"><xs:enumeration value="Success"/><xs:enumeration value="Information"/><xs:enumeration value="Warning"/><xs:enumeration value="Error"/></xs:restriction></xs:simpleType><xs:complexType name="ProductSystem"><xs:sequence><xs:element maxOccurs="1" minOccurs="1" name="ProductSystemId" type="xs:int"/></xs:sequence></xs:complexType></xs:schema>
+  </wsdl:types>
+  <wsdl:message name="CalculateResponseMessage">
+    <wsdl:part name="CalculateResponse" element="q1:CalculateResponse">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="CalculateRequestMessage">
+    <wsdl:part name="CalculateRequest" element="q1:CalculateRequest">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:portType name="CalculateService">
+    <wsdl:operation name="Calculate">
+      <wsdl:input name="CalculateRequestMessage" message="tns:CalculateRequestMessage" wsaw:Action="http://asb.co.nz/Services/Calculate/0000/CalculateService/Calculate">
+    </wsdl:input>
+      <wsdl:output name="CalculateResponseMessage" message="tns:CalculateResponseMessage" wsaw:Action="http://asb.co.nz/Services/Calculate/0000/CalculateService/CalculateResponse">
+    </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Validate">
+      <wsdl:input name="CalculateRequestMessage" message="tns:CalculateRequestMessage" wsaw:Action="http://asb.co.nz/Services/Calculate/0000/CalculateService/Validate">
+    </wsdl:input>
+      <wsdl:output name="CalculateResponseMessage" message="tns:CalculateResponseMessage" wsaw:Action="http://asb.co.nz/Services/Calculate/0000/CalculateService/ValidateResponse">
+    </wsdl:output>
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="CalculateServiceEndpoint" type="tns:CalculateService">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http"/>
+    <wsdl:operation name="Calculate">
+      <soap:operation soapAction="http://asb.co.nz/Services/Calculate/0000/CalculateService/Calculate" style="document"/>
+      <wsdl:input name="CalculateRequestMessage">
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output name="CalculateResponseMessage">
+        <soap:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Validate">
+      <soap:operation soapAction="http://asb.co.nz/Services/Calculate/0000/CalculateService/Validate" style="document"/>
+      <wsdl:input name="CalculateRequestMessage">
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output name="CalculateResponseMessage">
+        <soap:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="CalculateService">
+    <wsdl:port name="CalculateServiceEndpoint" binding="tns:CalculateServiceEndpoint">
+      <soap:address location="http://ntcomp2739.sov.asbgroup.co.nz/CalculateService.svc"/>
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>

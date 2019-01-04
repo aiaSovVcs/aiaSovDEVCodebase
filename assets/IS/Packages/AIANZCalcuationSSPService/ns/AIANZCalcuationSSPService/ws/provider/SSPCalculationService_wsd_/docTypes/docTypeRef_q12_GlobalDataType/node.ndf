@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Values version="2.0">
+  <record name="record" javaclass="com.wm.util.Values">
+    <value name="node_type">record</value>
+    <value name="node_subtype">unknown</value>
+    <value name="node_nsName">AIANZCalcuationSSPService.ws.provider.SSPCalculationService_wsd_.docTypes:docTypeRef_q12_GlobalDataType</value>
+    <value name="node_pkg">AIANZCalcuationSSPService</value>
+    <value name="is_public">false</value>
+    <value name="field_type">record</value>
+    <value name="field_dim">0</value>
+    <value name="nillable">true</value>
+    <value name="form_qualified">false</value>
+    <value name="is_global">false</value>
+    <value name="schemaDomain">d6ca63506b288089168aa2b513b</value>
+    <value name="docTypeDomain">febd09a787d84c7faf20f06288dd15a7</value>
+    <value name="originURI">http://VMAIASOV.eur.ad.sag:5555/ws/aiaInterfaces.SSP.provider:SSPCalculationService_wsd?WSDL</value>
+    <array name="rec_fields" type="record" depth="1">
+      <record javaclass="com.wm.util.Values">
+        <value name="node_type">record</value>
+        <value name="node_subtype">unknown</value>
+        <value name="is_public">false</value>
+        <value name="field_name">q12:CalcConfig</value>
+        <value name="field_type">recref</value>
+        <value name="field_dim">0</value>
+        <value name="field_opt">true</value>
+        <value name="nillable">false</value>
+        <value name="field_xmlns">http://asb.co.nz/ApplicationServices/SSP/</value>
+        <value name="form_qualified">true</value>
+        <value name="is_global">false</value>
+        <value name="rec_closed">true</value>
+        <value name="modifiable">true</value>
+        <value name="rec_ref">AIANZCalcuationSSPService.ws.provider.SSPCalculationService_wsd_.docTypes:docTypeRef_q12_GlobalDataTypeCalcConfig</value>
+      </record>
+    </array>
+    <record name="schemaType" javaclass="com.wm.util.Values">
+      <value name="xmlns">http://asb.co.nz/ApplicationServices/SSP/</value>
+      <value name="ncName">GlobalDataType</value>
+    </record>
+    <value name="schemaRegistered">true</value>
+    <value name="modifiable">false</value>
+  </record>
+</Values>
